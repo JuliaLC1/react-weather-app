@@ -1,0 +1,19 @@
+.city {
+  color: #878787;
+  font-size: 30px;
+  font-weight: 100px;
+  line-height: 28px;
+}
+
+.date-time {
+  list-style: none;
+  color: #878787;
+  font-size: 15px;
+  font-weight: 100px;
+  line-height: 19px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  top: -10px;
+}

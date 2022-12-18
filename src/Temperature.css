@@ -1,0 +1,22 @@
+#icon {
+  margin-right: 2px;
+  height: 64px;
+  width: 64px;
+  text-decoration: none;
+}
+
+#temp-number {
+  color: #212121;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 375;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+}
+
+.units a {
+  text-decoration: none;
+}
