@@ -3,6 +3,7 @@ import Search from "./Search";
 import Overview from "./Overview";
 import Temperature from "./Temperature";
 import Observations from "./Observations";
+import OpenSource from "./OpenSource";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <Observations />
             </div>
           </div>
+          <OpenSource />
         </div>
       </div>
     </div>
