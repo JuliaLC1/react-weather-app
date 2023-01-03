@@ -20,3 +20,7 @@
 .units a {
   text-decoration: none;
 }
+.observations {
+  list-style: none;
+  color: #878787;
+}

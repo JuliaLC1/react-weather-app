@@ -2,7 +2,6 @@ import "./App.css";
 import Search from "./Search";
 import Overview from "./Overview";
 import Temperature from "./Temperature";
-import Observations from "./Observations";
 import OpenSource from "./OpenSource";
 
 function App() {
@@ -12,10 +11,9 @@ function App() {
         <div className="weather-app-wrapper">
           <div className="weather-app">
             <Search />
-            <Overview />
+            <Overview defaultCity="London" />
             <div className="row">
-              <Temperature />
-              <Observations />
+              <Temperature defaultCity="London" />
             </div>
           </div>
           <OpenSource />
