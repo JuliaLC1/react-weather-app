@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Overview.css";
 export default function Overview(props) {
   const [overview, setOverview] = useState({ ready: false });
@@ -9,7 +10,7 @@ export default function Overview(props) {
       ready: true,
       city: response.data.name,
       description: response.data.weather[0].description,
-      date: "Tuesday 19:50",
+      date: new Date(response.data.dt * 1000),
     });
   }
   if (overview.ready) {
@@ -19,7 +20,10 @@ export default function Overview(props) {
           <div className="overview">
             <h1 className="city"> {overview.city} </h1>
             <ul className="date-time">
-              <li>{overview.date}</li>
+              <li>
+                {" "}
+                <FormattedDate date={overview.date} />
+              </li>
               <li className="text-capitalize">{overview.description}</li>
             </ul>
           </div>
