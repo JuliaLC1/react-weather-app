@@ -1,6 +1,7 @@
 import FormattedDate from "./FormattedDate";
 import "./Overview.css";
 import WeatherIcon from "./WeatherIcon";
+import TemperatureUnits from "./TemperatureUnites";
 
 export default function Overview(props) {
   return (
@@ -27,12 +28,7 @@ export default function Overview(props) {
             </div>
 
             <div className="p-2 temperature">
-              <strong id="temp-number">
-                {Math.round(props.data.temperature)}
-              </strong>
-              <span className="units">
-                <a href="/">°C | °F </a>{" "}
-              </span>
+              <TemperatureUnits celsius={props.data.temperature} />
             </div>
           </div>
         </div>
