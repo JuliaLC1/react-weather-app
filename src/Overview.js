@@ -1,5 +1,6 @@
 import FormattedDate from "./FormattedDate";
 import "./Overview.css";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Overview(props) {
   return (
@@ -22,12 +23,9 @@ export default function Overview(props) {
         <div className="col-6">
           <div className="d-flex flex-row mb-3">
             <div className="p-2 weather-condition">
-              <img
-                src={props.data.iconUrl}
-                alt={props.data.description}
-                id="icon"
-              />
+              <WeatherIcon code={props.data.icon} />
             </div>
+
             <div className="p-2 temperature">
               <strong id="temp-number">
                 {Math.round(props.data.temperature)}
