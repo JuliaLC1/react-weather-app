@@ -24,7 +24,7 @@ export default function Overview(props) {
         <div className="col-6">
           <div className="d-flex flex-row mb-3">
             <div className="p-2 weather-condition">
-              <WeatherIcon code={props.data.icon} />
+              <WeatherIcon code={props.data.icon} size={60} />
             </div>
 
             <div className="p-2 temperature">
